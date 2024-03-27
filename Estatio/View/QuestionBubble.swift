@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct QuestionBubble: View {
+    var question: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(question)
+            .padding()
+            .background(Color("creamColor"))
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .foregroundColor(.black)
+            .transition(.scale)
     }
 }
 
-#Preview {
-    QuestionBubble()
-}

@@ -10,7 +10,7 @@ import SwiftUI
 struct InitialOptionsView: View {
     // Define your options with navigation destinations
     let options: [Option] = [
-        Option(title: "Buy Land & Build", destination: AnyView(BuyAndBuildQuestionsView())),
+        Option(title: "Buy Land & Build", destination: AnyView(BuyAndBuildView())),
         Option(title: "Build on Owned Land", destination: AnyView(BuildOnOwnedLandView())), // not yet built
         Option(title: "Renovate or Expand", destination: AnyView(RenovateOrExpandView())), // not yet built
         Option(title: "Explore Investment", destination: AnyView(ExploreInvestmentOpportunitiesView())) // not yet built
@@ -19,7 +19,7 @@ struct InitialOptionsView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color("forestGreen").edgesIgnoringSafeArea(.all)
+               
                 VStack {
                     Spacer()
                     ForEach(0..<2) { row in // 2 rows
@@ -47,8 +47,8 @@ struct OptionButton: View {
         NavigationLink(destination: option.destination) {
             Text(option.title)
                 .frame(width: 150, height: 150)
-                .foregroundColor(.black)
-                .background(Color("creamColor"))
+                .background(Color.gray)
+                .opacity(0.3)
                 .cornerRadius(20)
         }
         .padding()
@@ -58,10 +58,6 @@ struct OptionButton: View {
 struct Option {
     let title: String
     let destination: AnyView
-}
-
-struct BuyLandAndBuildView: View {
-    var body: some View { Text("Buy Land and Build") }
 }
 
 struct BuildOnOwnedLandView: View {

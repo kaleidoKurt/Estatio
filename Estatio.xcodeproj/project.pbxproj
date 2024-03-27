@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		FE780E3E2BAB6AB100DE753E /* EstatioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE780E3D2BAB6AB100DE753E /* EstatioApp.swift */; };
-		FE780E402BAB6AB100DE753E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE780E3F2BAB6AB100DE753E /* ContentView.swift */; };
-		FE780E422BAB6AB100DE753E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE780E412BAB6AB100DE753E /* Item.swift */; };
 		FE780E442BAB6AB200DE753E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE780E432BAB6AB200DE753E /* Assets.xcassets */; };
 		FE780E472BAB6AB200DE753E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE780E462BAB6AB200DE753E /* Preview Assets.xcassets */; };
+		FE780E522BAB6CD300DE753E /* QuestionBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE780E512BAB6CD300DE753E /* QuestionBubble.swift */; };
+		FE780E542BAB6D2400DE753E /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE780E532BAB6D2400DE753E /* Questions.swift */; };
+		FE780E562BAB6D5700DE753E /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE780E552BAB6D5700DE753E /* AnswerButton.swift */; };
+		FE780E592BABADE800DE753E /* InitialOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE780E582BABADE800DE753E /* InitialOptionsView.swift */; };
+		FEFBFFB82BAD06C3006DBA00 /* BuyAndBuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFBFFB72BAD06C3006DBA00 /* BuyAndBuildView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE780E3A2BAB6AB100DE753E /* Estatio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estatio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE780E3D2BAB6AB100DE753E /* EstatioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstatioApp.swift; sourceTree = "<group>"; };
-		FE780E3F2BAB6AB100DE753E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FE780E412BAB6AB100DE753E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FE780E432BAB6AB200DE753E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE780E462BAB6AB200DE753E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE780E512BAB6CD300DE753E /* QuestionBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBubble.swift; sourceTree = "<group>"; };
+		FE780E532BAB6D2400DE753E /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		FE780E552BAB6D5700DE753E /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		FE780E582BABADE800DE753E /* InitialOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOptionsView.swift; sourceTree = "<group>"; };
+		FEFBFFB72BAD06C3006DBA00 /* BuyAndBuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyAndBuildView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				FE780E3D2BAB6AB100DE753E /* EstatioApp.swift */,
-				FE780E3F2BAB6AB100DE753E /* ContentView.swift */,
-				FE780E412BAB6AB100DE753E /* Item.swift */,
+				FE780E4F2BAB6CA900DE753E /* Model */,
+				FE780E502BAB6CB200DE753E /* View */,
+				FE780E572BAB6DA800DE753E /* ViewModel */,
 				FE780E432BAB6AB200DE753E /* Assets.xcassets */,
 				FE780E452BAB6AB200DE753E /* Preview Content */,
 			);
@@ -68,6 +75,32 @@
 				FE780E462BAB6AB200DE753E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE780E4F2BAB6CA900DE753E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE780E532BAB6D2400DE753E /* Questions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE780E502BAB6CB200DE753E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE780E582BABADE800DE753E /* InitialOptionsView.swift */,
+				FEFBFFB72BAD06C3006DBA00 /* BuyAndBuildView.swift */,
+				FE780E512BAB6CD300DE753E /* QuestionBubble.swift */,
+				FE780E552BAB6D5700DE753E /* AnswerButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE780E572BAB6DA800DE753E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE780E402BAB6AB100DE753E /* ContentView.swift in Sources */,
-				FE780E422BAB6AB100DE753E /* Item.swift in Sources */,
+				FEFBFFB82BAD06C3006DBA00 /* BuyAndBuildView.swift in Sources */,
+				FE780E562BAB6D5700DE753E /* AnswerButton.swift in Sources */,
+				FE780E522BAB6CD300DE753E /* QuestionBubble.swift in Sources */,
+				FE780E542BAB6D2400DE753E /* Questions.swift in Sources */,
 				FE780E3E2BAB6AB100DE753E /* EstatioApp.swift in Sources */,
+				FE780E592BABADE800DE753E /* InitialOptionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

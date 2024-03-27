@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct AnswerButton: View {
+    var answer: String
+    var action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: action) {
+            Text(answer)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color("creamColor"))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+        }
+        .foregroundColor(.black)
+        .padding(.horizontal)
     }
 }
 
-#Preview {
-    AnswerButton()
-}
